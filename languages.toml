@@ -1,0 +1,35 @@
+[language-server.tsgo]
+command = "tsgo"
+args = ["--lsp", "--stdio"]
+
+[language-server.tsgo.config.typescript.inlayHints]
+parameterNames = { enabled = "all" }
+parameterTypes = { enabled = true }
+variableTypes = { enabled = true }
+propertyDeclarationTypes = { enabled = true }
+functionLikeReturnTypes = { enabled = true }
+enumMemberValues = { enabled = true }
+
+[language-server.tsgo.config.javascript.inlayHints]
+parameterNames = { enabled = "all" }
+parameterTypes = { enabled = true }
+variableTypes = { enabled = true }
+propertyDeclarationTypes = { enabled = true }
+functionLikeReturnTypes = { enabled = true }
+enumMemberValues = { enabled = true }
+
+[[language]]
+name = "typescript"
+language-servers = ["tsgo"]
+
+[[language]]
+name = "tsx"
+language-servers = ["tsgo"]
+
+[[language]]
+name = "javascript"
+language-servers = ["tsgo"]
+
+[[language]]
+name = "jsx"
+language-servers = ["tsgo"]
